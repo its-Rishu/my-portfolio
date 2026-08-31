@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Rishu Gupta — Computer Science and Engineering student, DSA learner and aspiring Full Stack Developer.">
+    <meta name="keywords" content="Rishu Gupta, CSE, Full Stack Developer, DSA, C++, JavaScript, Web Development, LPU">
+    <meta name="author" content="Rishu Gupta">
+
+    <title>Rishu Gupta | CSE Student & Full Stack Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="canvas-bg"></canvas>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+            </li>
+        </ul>
+
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+
+            <div class="hero-text reveal">
+                <h1>
+                    Hi, I'm <span>Rishu Gupta</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Computer Science & Engineering Student
+                    <span class="separator">|</span>
+                    Aspiring Full Stack Developer
+                </p>
+
+                <p class="hero-desc">
+                    I'm a second-year CSE student at Lovely Professional University,
+                    passionate about web development, Data Structures & Algorithms,
+                    and building practical software projects. I'm continuously
+                    improving my problem-solving skills while turning ideas into
+                    clean, useful web experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i> Explore My Work
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i>Contact me
+                    </a>
+                </div>
+            </div>
+
+            <!-- Replace banner.png with your latest generated banner image -->
+            <div class="hero-image reveal">
+                <div class="profile-card">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring-2"></div>
+
+                    <img
+                        src="now.png"
+                        class="profile-img"
+                        alt="Rishu Gupta portfolio banner"
+                    >
+
+                    <div class="floating-tag tag-1">
+                        <i class="fas fa-code"></i> Full Stack
+                    </div>
+
+                    <div class="floating-tag tag-2">
+                        <i class="fas fa-laptop-code"></i> DSA
+                    </div>
+
+                    <div class="floating-tag tag-3">
+                        <i class="fas fa-lightbulb"></i> Adaptable
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QUICK STATS -->
+    <div class="stats-bar">
+        <div class="stat-card reveal">
+            <div class="stat-number">2nd</div>
+            <div class="stat-label">Year CSE</div>
+        </div>
+
+        <div class="stat-card reveal">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Tech Topics</div>
+        </div>
+
+        <div class="stat-card reveal">
+            <div class="stat-number">DSA</div>
+            <div class="stat-label">Problem Solving</div>
+        </div>
+
+        <div class="stat-card reveal">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Learning Mindset</div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="section-header reveal">
+            <h2 class="section-title">A Little About Me</h2>
+            <p class="section-desc">
+                A student developer focused on learning, building and improving every day.
+            </p>
+        </div>
+
+        <div class="about-grid reveal">
+
+            <div class="about-text">
+                <p>
+                    I'm <strong>Rishu Gupta</strong>, a second-year
+                    <strong>Computer Science and Engineering</strong> student at
+                    <strong>Lovely Professional University</strong>.
+                </p>
+
+                <p>
+                    My current focus is <strong>Full Stack Web Development</strong>.
+                    Alongside development, I'm actively strengthening my foundation
+                    in <strong>Data Structures & Algorithms</strong> and regularly
+                    practicing coding problems.
+                </p>
+
+                <p>
+                    I enjoy understanding how things work rather than just memorizing
+                    solutions. Whether I'm debugging C++, designing a web page,
+                    working with JavaScript, or learning a new DSA pattern, my goal
+                    is to keep building a stronger technical foundation.
+                </p>
+
+                <p>
+                    I'm especially interested in creating projects that solve
+                    everyday problems and demonstrate what I learn.
+                </p>
+            </div>
+
+            <div class="about-highlights">
+
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="highlight-text">
+                        <h4>Full Stack Development</h4>
+                        <p>
+                            Learning frontend fundamentals and progressing toward
+                            modern full-stack applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="highlight-text">
+                        <h4>DSA & Problem Solving</h4>
+                        <p>
+                            Practicing arrays, strings, hashing, binary search,
+                            sliding window, two pointers and more.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="highlight-text">
+                        <h4>JavaScript</h4>
+                        <p>
+                            Building interactive web experiences and learning
+                            how frontend logic works.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="highlight-text">
+                        <h4>Always Learning</h4>
+                        <p>
+                            Exploring new technologies through projects, coding
+                            practice and hands-on experimentation.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey">
+        <div class="section-header reveal">
+            <h2 class="section-title">Learning Journey</h2>
+            <p class="section-desc">
+                From programming fundamentals to building real-world projects.
+            </p>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-year">Foundation</span>
+                    <h3>Programming & Web Basics</h3>
+                    <p>
+                        Built my foundation with programming concepts and learned
+                        HTML, CSS and JavaScript while developing small web projects.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-year">Current Focus</span>
+                    <h3>DSA & C++</h3>
+                    <p>
+                        Working through Data Structures & Algorithms and practicing
+                        problem-solving patterns through coding questions.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">Arrays</span>
+                        <span class="project-tag">Hashing</span>
+                        <span class="project-tag">Binary Search</span>
+                        <span class="project-tag">Sliding Window</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-year">Next Goal</span>
+                    <h3>Full Stack Development</h3>
+                    <p>
+                        Expanding from frontend development into backend technologies,
+                        databases, APIs and complete full-stack applications.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Frontend</span>
+                        <span class="project-tag">Backend</span>
+                        <span class="project-tag">Database</span>
+                        <span class="project-tag">APIs</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="section-header reveal">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-desc">
+                Practical projects that reflect what I'm learning and building.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <span class="project-status">Built</span>
+                </div>
+
+                <div class="project-body">
+                    <h3>Rent & Expense Split Calculator</h3>
+                    <p>
+                        A browser-based calculator designed to simplify shared
+                        living expenses by calculating rent, utilities, income-based
+                        contributions and roommate splits.
+                    </p>
+                </div>
+
+                <div class="project-tags">
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">DOM</span>
+                </div>
+
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <span class="project-status">Academic</span>
+                </div>
+
+                <div class="project-body">
+                    <h3>Mental Health Support System</h3>
+                    <p>
+                        An academic software-system concept focused on providing
+                        an organized platform for mental-health support workflows,
+                        documented through software engineering models and diagrams.
+                    </p>
+                </div>
+
+                <div class="project-tags">
+                    <span class="project-tag">SRS</span>
+                    <span class="project-tag">DFD</span>
+                    <span class="project-tag">UML</span>
+                    <span class="project-tag">Software Engineering</span>
+                </div>
+            </div>
+
+            <!-- <div class="project-card reveal">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <span class="project-status">Current</span>
+                </div>
+
+                <div class="project-body">
+                    <h3>Personal Portfolio</h3>
+                    <p>
+                        A responsive developer portfolio showcasing my education,
+                        learning journey, technical skills, projects and future
+                        goals as I progress toward full-stack development.
+                    </p>
+                </div>
+
+                <div class="project-tags">
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">Responsive UI</span>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="section-header reveal">
+            <h2 class="section-title">Technical Toolkit</h2>
+            <p class="section-desc">
+                Technologies and concepts I'm currently learning and using.
+            </p>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-category reveal">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                </div>
+
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">C++</span>
+                            <span class="skill-level">Learning</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">C</span>
+                            <span class="skill-level">Known</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">Known</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 65%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level">Known</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category reveal">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                </div>
+
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-level">Known</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-level">Known</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">DOM & Events</span>
+                            <span class="skill-level">Learning</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="skill-category reveal">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>CS Foundations</h3>
+                </div>
+
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">DBMS & SQL</span>
+                            <span class="skill-level">Known</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 65%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">OOP</span>
+                            <span class="skill-level">Known</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 65%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Git & GitHub</span>
+                            <span class="skill-level">Learning</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <div class="section-header reveal">
+            <h2 class="section-title">Education</h2>
+            <p class="section-desc">
+                Where I'm building my academic and technical foundation.
+            </p>
+        </div>
+
+        <div class="edu-card reveal">
+            <div class="edu-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+
+            <h3>B.Tech in Computer Science and Engineering</h3>
+
+            <p class="institution">
+                Lovely Professional University (LPU)
+            </p>
+
+            <p class="affiliation">
+                Phagwara, Punjab, India
+            </p>
+
+            <span class="year">
+                2nd Year • Currently Pursuing
+            </span>
+        </div>
+    </section>
+
+    <!-- CURRENT GOALS -->
+    <section id="goals">
+        <div class="section-header reveal">
+            <h2 class="section-title">What I'm Working Toward</h2>
+            <p class="section-desc">
+                My current roadmap as a student developer.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card reveal">
+                <div class="project-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3>Become a Full Stack Developer</h3>
+                <p>
+                    Move from frontend fundamentals to backend development,
+                    databases, APIs, authentication and deployment.
+                </p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-icon">
+                    <i class="fas fa-terminal"></i>
+                </div>
+                <h3>Strengthen DSA</h3>
+                <p>
+                    Build strong problem-solving skills by mastering core
+                    patterns and consistently solving coding problems.
+                </p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Build Better Projects</h3>
+                <p>
+                    Turn what I learn into practical projects that demonstrate
+                    real development skills instead of only collecting certificates.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="resume-section reveal">
+        <h2 class="section-title" style="margin: 1rem 0 1rem;">
+            Let's Build Something
+        </h2>
+
+        <a href="Finalized.pdf" class="resume-btn" download>
+            <i class="fas fa-download"></i> Download Resume
+        </a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-header reveal">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-desc">
+                Have an idea, project or opportunity? I'd love to hear from you.
+            </p>
+        </div>
+
+        <div class="contact-grid reveal">
+
+            <div class="contact-info">
+                <h3>Open to Learning & Building</h3>
+
+                <p>
+                    I'm always interested in connecting with fellow students,
+                    developers and people who enjoy building technology.
+                </p>
+
+                <div class="contact-links">
+
+                    <!-- Replace these placeholders with your real links -->
+                    <a href="mailto:rishugupta0102@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <div class="link-text">
+                            <span class="link-label">Email</span>
+                            <span class="link-value">rishugupta0102@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/its-rishu-gupta/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fab fa-linkedin-in"></i>
+                        <div class="link-text">
+                            <span class="link-label">LinkedIn</span>
+                            <span class="link-value">Connect with me</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/its-Rishu" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <div class="link-text">
+                            <span class="link-label">GitHub</span>
+                            <span class="link-value">View my repositories</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="contact-visual">
+                <div class="contact-orbit">
+                    <div class="orbit-ring"></div>
+                    <div class="orbit-center">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="orbit-item">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="orbit-item">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="orbit-item">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Built with <span class="heart">❤</span> by Rishu Gupta
+            <span class="footer-separator">|</span>
+            © 2026
+        </p>
+        <p class="footer-note">
+            Keep learning. Keep building. Keep improving.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
